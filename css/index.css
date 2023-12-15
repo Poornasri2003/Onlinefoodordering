@@ -1,0 +1,77 @@
+
+#shopname{
+  font-size:38px;
+  text-align: center;
+  color:red;
+}
+.heading{
+    padding-left: 80px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    font-weight: 300;
+    color:rgb(115, 180, 128);
+    text-align:center;
+    animation: flashing-style 1s linear infinite;
+}
+/*.split {
+    max-width: 800px;
+    width: 50%;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 270px;
+  }
+  
+  .left {
+    left: 0;
+    
+  }
+  
+  .right {
+    right: 0;
+    
+  }*/
+.split{
+    width:100%;
+    height:auto;
+    display: flex;
+    margin:10px;
+}
+.flexclass{
+  width:60%;
+ border-radius: 20px;
+}
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    height:80%;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 100%;
+    
+}
+.asideimg{
+    
+    height:80%;
+    width:100%;
+    border-radius: 20px;
+}
+@keyframes heading{
+    0%{
+        opacity:1;
+    }
+    50%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+    
+}

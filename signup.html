@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <link rel="stylesheet"href="css\signup.css">
+  <title>Document</title>
+ 
+</head>
+<body >
+  
+  <div id="form" >
+    <h1>Sign Up</h1>
+    <form name="form" id="xxx" >
+      <label >Name:</label>
+      <input type="text" id="use" name="user" required><br>
+      <label >Email:</label>
+      <input type="email" id="use" name="mail"><br>
+   
+      <label >MobileNO:</label>
+      <input type="text" id="use" name="mobile" required><br>
+
+      <label>Gender:</label>
+      
+      <input type="text" name="use" name="gender"  required><br> 
+      <label>Address:</label>
+      
+      <input type="text" name="use" name="address"  required><br> 
+      <br>
+       <input type="submit" onclick="pay()" class="sub" value="Pay">
+      <br>
+  
+    </form>
+   
+<script>
+  let x = document.getElementById("xxx");
+  x.addEventListener("focus", myFocusFunction, true);
+  x.addEventListener("blur", myBlurFunction, true);
+  
+  function myFocusFunction() {
+    document.getElementById("uset").style.backgroundColor = "yellow";
+  }
+  
+  function myBlurFunction() {
+    document.getElementById("use").style.backgroundColor = "";
+  }
+  </script>
+
+</script>
+</body>
+</html>
+</body>
+</html>

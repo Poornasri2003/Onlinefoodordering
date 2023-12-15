@@ -1,0 +1,254 @@
+/*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+}
+body{
+    background:white;
+    font-family:'Poppins',sans-serif;
+}
+.menu{
+    padding:0 10px 30px 10px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    grid-gap:20px 40px;
+}
+.heading{
+    background-color: #70b2d9;
+background-image: linear-gradient(315deg, #70b2d9 0%, #39e5b6 74%);
+    color:white;
+    margin-bottom:30px;
+    padding:30px 0;
+    grid-column:1/-1;
+    text-align:center;
+}
+.heading>h1{
+    font-weight:400;
+    font-size:32px;
+    letter-spacing:5px;
+    margin-bottom:10px;
+    text-transform:uppercase;
+}
+.food-item{
+    gap:10px;
+    display: grid;
+    position:relative;
+    grid-template-rows:auto 1fr;
+    border-radius:15px;
+    box-shadow:0 0 15px black;
+    transition:.2s ease-in-out;
+    max-height: 800px;
+}
+
+.food-item >img{
+    position:relative;
+    height:400px;
+    width:100%;
+    border-radius:15px 15px 0 0;
+    cursor:pointer;
+    gap:20px;
+}
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    height:100%;
+    gap:20px;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 100%;
+    
+}
+.details{
+    display:grid;
+    grid-template-rows: auto 1fr 50px;
+    grid-row-gap:15px;
+    background-color: #f3e6e8;
+background-image: linear-gradient(315deg, #f3e6e8 0%, #d5d0e5 74%);
+
+}
+.details-sub{
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+.details-sub>h4{
+    font-style: bold;
+    font-size:40px;
+}
+.details-sub>h5{
+    font-weight:600;
+    font-size:18px;
+}
+.price{
+    text-align:right;
+}
+.details>p{
+    color:grey;
+    font-size:15px;
+    line-height: 28px;
+    font-weight:400;
+    align-self: stretch;
+}
+.details>button{
+    background:#9d818d;
+    border:none;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    width:500px;
+    height:50px;
+    border-radius:5px;
+    cursor:pointer;
+}
+.details>button>a{
+    font-size: 18px;
+    color:rgb(26, 24, 24);
+}
+.details>button:hover{
+    background-color:purple;
+}*/
+/* index.css */
+.container{
+    align-items: center;
+    padding-left: 400px;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu {
+    padding: 0 10px 30px 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 20px 40px;
+}
+
+.heading {
+    background-color: #70b2d9;
+    background-image: linear-gradient(315deg, #70b2d9 0%, #39e5b6 74%);
+    color: white;
+    margin-bottom: 30px;
+    padding: 30px 0;
+    grid-column: 1 / -1;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.heading > h1 {
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.food-item {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    border-radius: 15px;
+    box-shadow: 0 0 15px black;
+    transition: .2s ease-in-out;
+    max-height: 800px;
+    overflow: hidden; /* Prevent images from overflowing */
+}
+
+.food-item > img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+    cursor: pointer;
+}
+
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    height:600px;
+}
+
+.carousel-slide {
+    display:flex;
+    transition: transform 0.5s ease-in-out;
+    grid: gap 20px;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.details {
+    display: grid;
+    grid-template-rows: auto 1fr 50px;
+    grid-row-gap: 15px;
+    background-color: #f3e6e8;
+    background-image: linear-gradient(315deg, #f3e6e8 0%, #d5d0e5 74%);
+    padding: 15px;
+}
+
+.details-sub {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+.details-sub > h4 {
+    font-weight: bold;
+    font-size: 24px; /* Adjust the font size as needed */
+}
+
+.details-sub > h5 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.price {
+    text-align: right;
+}
+
+.details > p {
+    color: grey;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.details > button {
+    background: #9d818d;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.details > button > a {
+    font-size: 18px;
+    color: rgb(26, 24, 24);
+    text-decoration: none;
+}
+
+.details > button:hover {
+    background-color: purple;
+}

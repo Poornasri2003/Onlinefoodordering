@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/poornamain.css" >
+    
+    <title>Anna Poorna</title>
+</head>
+<body>
+   
+    <div class="menu">
+        <div class="heading">
+            <h1> Annapoorna hotels lunch items</h1>
+            <div id="result">
+                <button style="
+                background: white;
+                border:none;
+                color:purple;
+                font-size:16px;
+                width:180px;
+                border-radius:5px;
+                cursor:pointer"
+                onclick="show();">Cart value</button>
+                <div id="hello"></div>
+                <button style="
+                background: rgb(240, 233, 233);
+                border:none;
+                color:purple;
+                font-size:16px;
+                width:180px;
+                border-radius:5px;
+                cursor:pointer"
+                onclick="go();">Place your order
+           </button>
+               </div>
+
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="breakfast.html">Breakfast</a></li>
+                    <li><a href="lunch.html">Lunch</a></li>
+                    <li><a href="dinner.html">Dinner</a></li>
+                    <li><a href="stater.html">Starter</a></li>
+                    <li><a href="icecream.html">Ice cream</a></li>
+                 
+                </ul>
+            </nav>
+     </div>
+     <!--flex-->
+      <!--<div class="complete">-->
+        <!--1 item-->
+        <div class="food-item">
+            <img src="images\lunch\sambarrice.png" >
+             <div class="details">
+                <div class="details-sub">
+                    <h3><div class="price"> 45</div></h3><br>
+                    </div>  <button onclick="sum(45);"> Add to cart</button>
+                    <button onclick="deletion(45);"> Remove from cart</button>
+            </div>
+            </div>
+<!--second flex-->
+<div class="food-item">
+    <img src="images\lunch\tomatorice.png"   >
+     <div class="details">
+        <div class="details-sub">
+            <h3><div class="price"> 45</div></h3><br>
+            </div>
+            <button onclick="sum(45);"> Add to cart</button>
+            <button onclick="deletion(45);"> Remove from cart</button>
+    </div>
+    </div>
+    <!--third flex--->
+    <div class="food-item">
+        <img src="images\lunch\noodles.png"   >
+         <div class="details">
+            <div class="details-sub">
+                <h3><div class="price"> 45</div></h3><br>
+                </div>
+                <button onclick="sum(45);"> Add to cart</button>
+                <button onclick="deletion(45);"> Remove from cart</button>
+        </div>
+        </div>
+            <!--fourth flex-->
+            <div class="food-item">
+                <img src="images\lunch\whiterice.png"   >
+                 <div class="details">
+                    <div class="details-sub">
+                        <h3><div class="price"> 45</div></h3><br>
+                        </div>
+                        <button onclick="sum(45);"> Add to cart</button>
+                        <button onclick="deletion(45);"> Remove from cart</button>
+                </div>
+                </div>  
+      <!--fifth flex-->
+      <div class="food-item">
+        <img src="images\gobimanchurian.png"   >
+         <div class="details">
+            <div class="details-sub">
+                <h3><div class="price"> 45</div></h3><br>
+                </div>
+                <button onclick="sum(45);"> Add to cart</button>
+                <button onclick="deletion(45);"> Remove from cart</button>
+        </div>
+        </div> 
+
+</div>
+</div>
+
+<script src="javascript\calculate.js">
+    
+
+</script>
+</body>
+</html>
